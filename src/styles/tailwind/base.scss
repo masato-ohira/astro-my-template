@@ -1,0 +1,17 @@
+@layer base {
+  html,
+  body {
+    @apply min-h-screen
+      w-full
+      max-w-full
+      overflow-x-hidden
+      bg-white;
+  }
+
+  body {
+    @apply font-feature-jp
+      font-body
+      tracking-wider
+      text-neutral-900;
+  }
+}
