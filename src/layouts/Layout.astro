@@ -1,0 +1,45 @@
+---
+import "@/styles/global.scss";
+import { MyMetas } from "./MyMetas.tsx";
+
+export interface Props {
+  pageId: string;
+}
+
+const { pageId } = Astro.props;
+
+const googleFonts = () => {
+  const list = [
+    `family=Noto+Sans+JP:wght@200;300;400;500;600;700;800`,
+    `family=Roboto:wght@100;300;400;500;700;900`,
+    `family=Roboto+Condensed:wght@100;300;400;500;700;900`,
+    `display=swap`,
+  ];
+  return `https://fonts.googleapis.com/css2?${list.join("&")}`;
+};
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href={googleFonts()} rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <MyMetas id={pageId} />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+    <slot name="body-end" />
+  </body>
+</html>
