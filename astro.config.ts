@@ -1,7 +1,7 @@
 import react from '@astrojs/react'
-import { defineConfig } from 'astro/config'
-
 import tailwind from '@astrojs/tailwind'
+import { defineConfig } from 'astro/config'
+import { dataIsPlugin } from './my-scripts/vite/data-is-plugin'
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,7 +16,7 @@ export default defineConfig({
     ssr: {
       noExternal: ['react-icons'],
     },
-    // plugins: [dataIsPlugin()],
+    plugins: [dataIsPlugin()],
     optimizeDeps: { exclude: ['fsevents'] },
   },
 })

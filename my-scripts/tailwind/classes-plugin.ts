@@ -1,7 +1,7 @@
 import fs from 'fs-extra'
 import { globSync } from 'glob'
-import { zipObject } from 'lodash-es'
 import plugin from 'tailwindcss/plugin'
+import { zipObject } from 'lodash-es'
 import type { CSSRuleObject } from 'tailwindcss/types/config'
 
 const tailwindDir = `app/styles`

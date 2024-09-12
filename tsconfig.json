@@ -3,9 +3,30 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    // "types": ["vitest/globals"],
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@c/*": ["./src/components/*"],
+      "@ui/*": ["./src/components/ui/*"],
+      "@@/*": ["./*"]
     }
-  }
+  },
+  // "include": [
+  //   //
+  //   "src/**/*.ts",
+  //   "src/**/*.tsx",
+  //   "src/**/*.astro",
+  //   "my-scripts/**/*.ts"
+  // ],
+  "exclude": [
+    //
+    "node_modules",
+    "dist",
+    "deploy",
+    "onedrive"
+  ]
 }
