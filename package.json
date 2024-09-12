@@ -19,8 +19,6 @@
     "@astrojs/react": "^3.5.0",
     "@astrojs/tailwind": "^5.1.0",
     "@radix-ui/react-slot": "^1.0.2",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
     "astro": "^4.10.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -28,11 +26,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
-    "swr": "^2.2.5",
-    "tailwind-merge": "^2.3.0",
-    "tailwindcss": "^3.4.4",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.4.5"
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
@@ -41,11 +35,17 @@
     "@types/fs-extra": "~11.0.4",
     "@types/lodash-es": "~4.17.12",
     "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "fs-extra": "^11.2.0",
     "sass": "^1.77.5",
     "tailwind-clip-path": "^1.0.0",
+    "tailwind-merge": "^2.3.0",
     "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.4",
+    "tailwindcss-animate": "^1.0.7",
     "tailwindcss-easing": "^0.2.1",
-    "typesync": "^0.12.1"
+    "typescript": "^5.4.5",
+    "typesync": "^0.13.0"
   }
 }
