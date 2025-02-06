@@ -11,12 +11,11 @@ export default defineConfig({
   },
   integrations: [react(), tailwind()],
   base: `/app`,
-  server: { port: 3000 },
   vite: {
-    ssr: {
-      noExternal: ['react-icons'],
-    },
+    // ssr: {
+    //   noExternal: ['react-icons'],
+    // },
     plugins: [dataIsPlugin()],
-    optimizeDeps: { exclude: ['fsevents'] },
+    // optimizeDeps: { exclude: ['fsevents'] },
   },
 })

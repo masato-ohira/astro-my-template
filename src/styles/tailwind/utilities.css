@@ -1,5 +1,4 @@
 @layer utilities {
-  // ------------------------------
   .vertical-lr {
     writing-mode: vertical-lr;
   }
@@ -13,7 +12,6 @@
       'jp90';
   }
 
-  // ------------------------------
   .br-pc {
     br {
       @apply hidden md:inline;
@@ -26,7 +24,6 @@
     }
   }
 
-  // ------------------------------
   .fll-evenodd {
     fill-rule: evenodd;
     clip-rule: evenodd;

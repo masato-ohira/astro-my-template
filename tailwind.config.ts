@@ -96,12 +96,8 @@ export default {
     require('tailwindcss-easing'),
     require('tailwindcss-animate'),
     require('tailwind-scrollbar'),
+    require('@tailwindcss/nesting'),
     require('@tailwindcss/container-queries'),
-    // plugin(function ({ addUtilities }) {
-    //   addUtilities({
-    //     ...(twClasses() as CSSRuleObject),
-    //   })
-    // }),
     classesPlugin,
   ],
 } satisfies Config

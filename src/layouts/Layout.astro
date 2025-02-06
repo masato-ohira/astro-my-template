@@ -1,6 +1,7 @@
 ---
-import "@/styles/global.scss";
-import { MyMetas } from "./MyMetas.tsx";
+import "@/styles/global.css";
+import GoogleFonts from "./GoogleFonts.astro";
+import { Metas } from "./Metas";
 
 export interface Props {
   pageId: string;
@@ -27,15 +28,8 @@ const googleFonts = () => {
     <meta name="format-detection" content="telephone=no,address=no,email=no" />
     <meta name="generator" content={Astro.generator} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href={googleFonts()} rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <MyMetas id={pageId} />
+    <GoogleFonts />
+    <Metas id={pageId} />
     <slot name="head" />
   </head>
   <body>

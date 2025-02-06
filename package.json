@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "volta": {
-    "node": "20.13.1"
+    "node": "22.13.1"
   },
   "scripts": {
     "dev": "astro dev",
@@ -15,37 +15,40 @@
     "git": "git add . && git commit -am $M"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/react": "^3.5.0",
-    "@astrojs/tailwind": "^5.1.0",
-    "@radix-ui/react-slot": "^1.0.2",
-    "astro": "^4.10.2",
-    "class-variance-authority": "^0.7.0",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/tailwind": "^6.0.0",
+    "@radix-ui/react-slot": "^1.1.2",
+    "astro": "^5.2.5",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lodash-es": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1",
-    "swr": "^2.2.5"
+    "react-icons": "^5.4.0",
+    "swr": "^2.3.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
+    "@biomejs/biome": "^1.9.4",
     "@tailwindcss/container-queries": "^0.1.1",
-    "@tailwindcss/typography": "^0.5.13",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/fs-extra": "~11.0.4",
     "@types/lodash-es": "~4.17.12",
-    "@types/node": "^20.14.2",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "fs-extra": "^11.2.0",
-    "sass": "^1.77.5",
+    "@types/node": "^20.17.17",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "fs-extra": "^11.3.0",
+    "postcss-import": "^16.1.0",
+    "sass": "^1.84.0",
     "tailwind-clip-path": "^1.0.0",
-    "tailwind-merge": "^2.3.0",
+    "tailwind-merge": "^2.6.0",
     "tailwind-scrollbar": "^3.1.0",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-easing": "^0.2.1",
-    "typescript": "^5.4.5",
-    "typesync": "^0.13.0"
+    "typescript": "^5.7.3",
+    "typesync": "^0.13.4"
   }
 }
